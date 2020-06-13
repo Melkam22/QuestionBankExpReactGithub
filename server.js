@@ -22,8 +22,9 @@ mongoose.connection.on('connected', ()=>{
     console.log('MongoDB is connected!')
 });
 
-/* .then(()=>console.log(`Mongodb is connected`))
-.catch(()=>console.log(`Error occurs on mongodb connection`)); */
+//bodyParsers to make available datas on req.body
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
 
 
