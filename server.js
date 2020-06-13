@@ -26,12 +26,10 @@ mongoose.connection.on('connected', ()=>{
 
 app.use(morgan('tiny'));
 
-//test routes
-
-app.get('/ashu', (req, res)=>{
-    //console.log('Ashu route is working')
+//test routes, before creating route folder
+/* app.get('/ashu', (req, res)=>{
     res.json('Ashu route is working')
-})
+}) */
 
 
 app.listen(PORT, console.log(`server is started @ ${PORT}`));
