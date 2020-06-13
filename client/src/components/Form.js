@@ -13,11 +13,12 @@ class Form extends Component{
 
 
 changeInput = (e)=>{
-    const target = e.target;
+   /*  const target = e.target;
     const name = target.name;
-    const value = target.value
+    const value = target.value */
     this.setState({
-        [name]: value
+        [e.target.name]: e.target.value
+       /*  [name]: value */
     })
 }
 
