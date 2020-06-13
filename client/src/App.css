@@ -1,1 +1,86 @@
- 
+.App{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* from Question&Answer */
+.quizAnswer{
+  width: 90%;
+  min-height: 74px;
+  background: rgba(23, 96, 6, 0.5);
+  margin-left: 5%;
+  box-shadow: 4px 6px 8px white;
+}
+
+.questionList{
+  width: 80%;
+  margin-left: 2%;
+  color: white;
+  font-size: 20px;
+  padding-top: 2%; 
+  padding-bottom: 1%;
+  font-weight: bold;
+}
+h1, h2, p{text-align: center;
+}
+
+.quizAnswer{
+  border-bottom: 1px black;
+}
+.answerBtn{
+  min-width: 120px;
+  height: 25px;
+  border: none;
+  margin-left: 4%;
+  padding-bottom: 1%;
+  background: lightslategrey;
+}
+
+.showScore{
+  font-size: 22px;
+  font-weight: bold;
+}
+.replayBox{
+  width: 85%;
+  min-height: 320px;
+  margin-left: 7.5%;
+  background: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rematch{
+  width: 140px;
+  height: 35px;
+  border: none;
+  color: wheat;
+  background: black;
+  font-size: 20px;
+}
+
+/* from form */
+.form{
+  width: 45%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(43,75,37,.6);
+  margin-left: 30%;
+  box-shadow: 2px 4px 6px;
+}
+input{
+  height: 30px;
+  width: 70%;
+  border: none;
+  padding: 0px 10px;
+}
+.btn{
+  width: 140px;
+  height: 35px;
+  border: none;
+}
