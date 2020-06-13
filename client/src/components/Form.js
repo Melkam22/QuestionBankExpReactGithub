@@ -32,7 +32,7 @@ changeInput = (e)=>{
 }
 
 axios({
-    url: '/log/save',
+    url: '/question/save',
     method: 'POST',
     data: data
 })
