@@ -5,6 +5,9 @@ const path = require('path');
 
 const app = express();
 
+//importing routes
+const routes = require('./routes/allRoutes');
+
 const PORT = process.env.PORT || 4000;
 
 
@@ -30,6 +33,9 @@ app.use(morgan('tiny'));
 /* app.get('/ashu', (req, res)=>{
     res.json('Ashu route is working')
 }) */
+
+//routes initialized
+app.use('/', routes);
 
 
 app.listen(PORT, console.log(`server is started @ ${PORT}`));
